@@ -1,0 +1,60 @@
+@import '../../../styles.scss';
+
+.profile-container {
+    padding: 20% 10%;
+    height: 100vh;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.profile-text {
+    font-size: 7vw;
+    letter-spacing: 2px;
+}
+
+.profile-menu {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.profile-menu > img {
+    border-radius: 50%;
+    width: 45%;
+}
+
+.profile-body-content {
+    padding-top: 3%;
+}
+
+@media only screen and (min-width: 600px) {
+    .profile-text {
+        font-size: 5vw;
+    }
+    .profile-menu > img {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .profile-menu > img {
+        width: 20%;
+    }
+  }
+
+@media only screen and (min-width: 992px) {
+    .profile-container {
+        padding: 10% 5%;
+    }
+    .profile-content {
+        flex-direction: row;
+    }
+    .profile-body-content {
+        padding: 3% 5%;
+    }
+    .profile-menu > img {
+        width: 50%;
+    }
+}

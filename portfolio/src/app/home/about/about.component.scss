@@ -1,0 +1,58 @@
+@import '../../../styles.scss';
+
+.about-container {
+    background-color: $primaryColor;
+    height: auto;
+    padding: 3% 5%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 4%;
+}
+
+.skills {
+    padding-top: 5%;
+    width: 100%;
+}
+
+.skills-item > a {
+    padding-bottom: 1%;
+}
+
+.progress {
+    background-color: $secondaryColor;
+}
+
+.progress-bar {
+    background-color: $tertiaryColor;
+    color: $primaryColor;
+}
+
+.more-details > a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 992px) {
+    .about-content {
+        flex-direction: row;
+        padding: 2%;
+    }
+    .about-body {
+        width: 50%;
+        padding: 0% 5%;
+    }
+    .skills {
+        padding: 0%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-item {
+        width: 75%;
+    }
+}

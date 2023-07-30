@@ -1,0 +1,123 @@
+@import '../../../styles.scss';
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: flex;
+}
+
+.work-container {
+    height: auto;
+    background-color: $secondaryColor;
+    padding: 3% 5%;
+}
+
+.work-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 10%;
+}
+
+.work-content-title {
+    width: 100%;
+    justify-content: center;
+}
+
+.dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-display {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 130px
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    overflow-y: scroll;
+    border: 1px solid #CFDDF4;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-item {
+    border: none;
+}
+
+.work-content-body {
+    padding-top: 5%;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5%;
+}
+
+.project-details-label {
+    width: 33%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+tr {
+    vertical-align: text-top;
+}
+
+@media only screen and (min-width: 992px) {
+    .desktop {
+        display: flex;
+    }
+    
+    .mobile {
+        display: none;
+    }
+
+    .work-content {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding: 3% 10%;
+    }
+
+    .work-content-body {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .work-content-title {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 50%;
+        p {
+            padding-bottom: 15px;
+        }
+    }
+
+    .work-content-title > p:hover {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    .desc {
+        padding: 0% 10%;
+    }
+}

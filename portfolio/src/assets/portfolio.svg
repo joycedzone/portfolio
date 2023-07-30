@@ -1,0 +1,10 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 31H45" stroke="#5E5659" stroke-width="4" stroke-miterlimit="16" stroke-linecap="round"/>
+<path d="M44.7805 30.9375L53.3415 38.6875" stroke="#5E5659" stroke-width="4" stroke-linecap="round"/>
+<path d="M54 39H96" stroke="#5E5659" stroke-width="4" stroke-linecap="round"/>
+<path d="M97 89V39.0001" stroke="#5E5659" stroke-width="4" stroke-linecap="round"/>
+<mask id="path-5-inside-1_17_742" fill="white">
+<path d="M21 31C21 29.8954 21.8954 29 23 29H88C94.0751 29 99 33.9249 99 40V89C99 90.1046 98.1046 91 97 91H23C21.8954 91 21 90.1046 21 89V31Z"/>
+</mask>
+<path d="M21 29H99H21ZM99 89C99 92.3137 96.3137 95 93 95H23C19.6863 95 17 92.3137 17 89L25 87H97C98.1046 87 99 87 99 87V89ZM23 95C19.6863 95 17 92.3137 17 89V35C17 31.6863 19.6863 29 23 29H25C25 29 25 29.8954 25 31V87L23 95ZM99 29V91V29Z" fill="#5E5659" mask="url(#path-5-inside-1_17_742)"/>
+</svg>

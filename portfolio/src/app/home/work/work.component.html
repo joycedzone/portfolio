@@ -1,0 +1,49 @@
+<div class="work-container primary-color">
+    <div class="font-300 header-text center">
+        <a>WORK.</a>
+    </div>
+    <div class="work-content font-300 body-text">
+        <div class="work-content-title desktop">
+            <p *ngFor="let item of projects" class="dropdown-item" (click)="selectProject(item)">
+                {{ item.title }}
+            </p>
+        </div>
+        <div class="work-content-title mobile">
+            <div class="dropdown">
+                <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="dropdown-display font-400 body-text bold">
+                    <p>{{ title }}</p>
+                    <img src="../../../assets/dropdown.svg" alt="down-arrow"  
+                      *ngIf="!showOptions" (click)="showOptions = !showOptions"/>
+                    <img src="../../../assets/dropup.svg" alt="down-up"
+                      *ngIf="showOptions" (click)="showOptions = !showOptions"/>
+                  </div>
+                </button>
+                <div class="dropdown-menu" *ngIf="showOptions">
+                  <p *ngFor="let item of projects" class="dropdown-item" (click)="selectProject(item)">
+                    {{ item.title }}
+                  </p>
+                </div>
+              </div>
+        </div>
+        <div class="work-content-body body-text center">
+            <p class="desc">{{ desc }}</p>
+            <div class="project-details" *ngIf="role != ''">
+                <table>
+                  <tr>
+                    <td class="project-details-label bold font-400">Role</td>
+                    <td class="project-details-label bold font-400">Responsibility</td>
+                    <td class="project-details-label bold font-400">URL</td>
+                  </tr>
+                  <tr>
+                    <td class="project-details-value small-text font-300">{{ role }}</td>
+                    <td class="project-details-value small-text font-300">{{ responsibility }}</td>
+                    <td class="project-details-value small-text font-300">{{ url }}</td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

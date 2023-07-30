@@ -1,0 +1,113 @@
+$primaryColor: #5E5659;
+$secondaryColor: #F5F5F5;
+$tertiaryColor: #D9D9D9;
+$fontFamily: 'Montserrat', sans-serif;
+
+html,
+body {
+  height: 100%;
+  cursor: default;
+}
+
+body,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.font-400 {
+  font-family: $fontFamily;
+  font-weight: 400;
+}
+
+.font-300 {
+  font-family: $fontFamily;
+  font-weight: 300;
+}
+
+.font-200 {
+  font-family: $fontFamily;
+  font-weight: 200;
+}
+
+.font-100 {
+  font-family: $fontFamily;
+  font-weight: 100;
+}
+
+.primary-color {
+  color: $primaryColor;
+}
+
+.secondary-color {
+  color: $secondaryColor;
+}
+
+.header-text {
+  font-size: 4vw;
+}
+
+.body-text {
+  font-size: 2.5vw;
+  letter-spacing: -0.2px;
+}
+
+.small-text {
+  font-size: 1.8vw;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {
+// }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header-text {
+    font-size: 3vw;
+  }
+  .body-text {
+    font-size: 2vw;
+  }
+  .small-text {
+    font-size: 1.50vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .body-text {
+    font-size: 1.5vw;
+  }
+  .small-text {
+    font-size: 1.2vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header-text {
+    font-size: 2.5vw;
+  }
+  .body-text {
+    font-size: 0.95vw;
+  }
+  .small-text {
+    font-size: 0.80vw;
+  }
+}
