@@ -6,40 +6,10 @@
 }
 
 .contact-content {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 3% 15%;
-}
-
-.contact-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.message {
-    height: 200px;
+    text-align: center;
+    padding-top: 3%;
 }
 
 .contact-socials {
     padding-bottom: 3%;
-}
-
-.form {
-    background-color: $secondaryColor;
-    border: none;
-    width: 100%;
-    margin-bottom: 1%;
-}
-@media only screen and (min-width: 992px) {
-    .contact-content {
-        flex-direction: row;
-        padding: 3% 10%;
-        justify-content: space-evenly;
-    }
-
-    .contact-form {
-        width: 50%;
-    }
 }

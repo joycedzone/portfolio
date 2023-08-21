@@ -1,61 +1,19 @@
-<div class="experience-container primary-color">
-    <div class="font-300 header-text center">
-        <a>EXPERIENCE.</a>
-    </div>
-    <div class="experince-content font-300 body-text">
-        <table class="mobile">
-            <tr>
-                <td class="year bold font-400">2017</td>
-                <td class="bold font-400"><img src="../../../assets/ellipse.svg" alt="ellipse"></td>
-                <td class="work font-400">Novare Technologies, Inc.</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><hr/></td>
-                <td></td>
-            </tr>            
-            <tr>
-                <td class="year bold font-400">2020</td>
-                <td class="bold font-400"><img src="../../../assets/ellipse.svg" alt="ellipse"></td>
-                <td class="work font-400">Manulife Philippines</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><hr/></td>
-                <td></td>
-            </tr>  
-            <tr>
-                <td class="year bold font-400">2020</td>
-                <td class="bold font-400"><img src="../../../assets/ellipse.svg" alt="ellipse"></td>
-                <td class="work font-400">Globe Telecom, Inc.</td>
-            </tr>
-        </table>
-        <table class="desktop">
-            <tr>
-                <td class="year bold font-400">2017</td>
-                <td class="bold font-400"><img src="../../../assets/ellipse.svg" alt="ellipse"></td>
-                <td class="work font-400">Novare Technologies, Inc.</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><hr/></td>
-                <td></td>
-            </tr>            
-            <tr>
-                <td class="year bold font-400">2020</td>
-                <td class="bold font-400"><img src="../../../assets/ellipse.svg" alt="ellipse"></td>
-                <td class="work font-400">Manulife Philippines</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><hr/></td>
-                <td></td>
-            </tr>  
-            <tr>
-                <td class="year bold font-400">2020</td>
-                <td class="bold font-400"><img src="../../../assets/ellipse.svg" alt="ellipse"></td>
-                <td class="work font-400">Globe Telecom, Inc.</td>
-            </tr>
-        </table>
+<div class="experience-container">
+    <div class="experince-content border mobile">
+        <div class="experience" *ngFor="let item of experience; let i=index">
+            <div class="experience-left">
+                <p class="font-400 body-text">{{item.year}}</p>
+            </div>
+            <div class="experience-middle">
+                <img src="../../../assets/ellipse.svg" alt="ellipse"/>
+                <div *ngIf="i+1 !== experience.length"> 
+                    <div class="vl"></div>
+                </div>
+            </div>
+            <div class="experience-right">
+                <p class="title font-400 small-text">{{item.title}}</p>
+                <p class="small-text font-200">{{item.company}}</p>
+            </div>
+        </div>
     </div>
 </div>

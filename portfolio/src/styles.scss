@@ -51,8 +51,18 @@ a {
   color: $secondaryColor;
 }
 
+.tertiary-color {
+  color: $tertiaryColor;
+}
+
 .header-text {
   font-size: 4vw;
+  letter-spacing: 1px;
+}
+
+.subheader-text {
+  font-size: 2.75vw;
+  letter-spacing: -1px;
 }
 
 .body-text {
@@ -81,6 +91,9 @@ a {
   .header-text {
     font-size: 3vw;
   }
+  .subheader-text {
+    font-size: 2.5vw;
+  }  
   .body-text {
     font-size: 2vw;
   }
@@ -104,6 +117,9 @@ a {
   .header-text {
     font-size: 2.5vw;
   }
+  .subheader-text {
+    font-size: 1.75vw;
+  }  
   .body-text {
     font-size: 0.95vw;
   }

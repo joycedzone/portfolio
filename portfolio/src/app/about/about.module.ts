@@ -5,13 +5,17 @@ import { ProfileComponent } from './profile/profile.component';
 import { AboutComponent } from './about.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { SkillsComponent } from './skills/skills.component';
+import { CredentialsComponent } from './credentials/credentials.component';
 
 @NgModule({
   declarations: [
     ProfileComponent,
     AboutComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    SkillsComponent,
+    CredentialsComponent
   ],
   imports: [
     CommonModule,

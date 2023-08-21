@@ -1,0 +1,225 @@
+<div class="skills-container primary-color">
+    <div class="skills-header font-300 header-text center">
+        <a>SKILLS.</a>
+    </div>
+    <div class="skills-content mobile">
+        <div class="skills">
+            <div class="skills-label">
+                <a class="font-400 body-text skills-title bold">Front-end Development</a>
+                <img src="../../../assets/dropdown.svg" alt="down-arrow" *ngIf="!showFe" (click)="toggle('fe')" />
+                <img src="../../../assets/dropup.svg" alt="down-up" *ngIf="showFe" (click)="toggle('fe')" />
+            </div>
+            <div *ngIf="showFe">
+                <div class="skills-item">
+                    <a class="font-400 body-text">Angular</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">HTML/CSS</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">Javascript</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">Typescript</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skills-label">
+                <a class="font-400 body-text skills-title bold">Back-end Development</a>
+                <img src="../../../assets/dropdown.svg" alt="down-arrow" *ngIf="!showBe" (click)="toggle('be')" />
+                <img src="../../../assets/dropup.svg" alt="down-up" *ngIf="showBe" (click)="toggle('be')" />
+            </div>
+            <div *ngIf="showBe">
+                <div class="skills-item">
+                    <a class="font-400 body-text">NodeJs</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">Python</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">API Development</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">Microservices</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skills-label">
+                <a class="font-400 body-text skills-title bold">Others</a>
+                <img src="../../../assets/dropdown.svg" alt="down-arrow" *ngIf="!showOthers" (click)="toggle('others')" />
+                <img src="../../../assets/dropup.svg" alt="down-up" *ngIf="showOthers" (click)="toggle('others')" />
+            </div>
+            <div *ngIf="showOthers">
+                <div class="skills-item">
+                    <a class="font-400 body-text">Amazon Web Services</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">CI/CD / DevOps</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">Conversational Interface</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 body-text">Agile Methodology</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills-content desktop">
+        <div class="skills">
+            <div class="skills-label">
+                <a class="font-400 body-text skills-title bold">Front-end Development</a>
+            </div>
+            <div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">Angular</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">HTML/CSS</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">Javascript</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text small">Typescript</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skills-label">
+                <a class="font-400 body-text skills-title bold">Back-end Development</a>
+            </div>
+            <div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">NodeJs</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">Python</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">API Development</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">Microservices</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skills-label">
+                <a class="font-400 body-text skills-title bold">Others</a>
+            </div>
+            <div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">Amazon Web Services</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">CI/CD / DevOps</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">Git/</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+                <div class="skills-item">
+                    <a class="font-400 small-text bold">Agile Methodology</a>
+                    <div class="progress font-400">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
