@@ -36,9 +36,14 @@
     align-items: center;
 }
 
+.navbar-right-desktop > p {
+    text-decoration: underline 0.10em rgba(242, 32, 32, 0);
+    transition: text-decoration-color 300ms;
+}
+
 .navbar-right-desktop > p:hover {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration-color: $primaryColor;
 }
 
 .navbar-right-mobile > img {

@@ -3,6 +3,7 @@
 .profile-container {
     padding: 20% 10%;
     height: 100vh;
+    animation: fade-in 2s;
 }
 
 .profile-content {
@@ -58,3 +59,8 @@
         width: 50%;
     }
 }
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

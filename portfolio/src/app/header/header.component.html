@@ -6,27 +6,17 @@
       </a>
     </div>
     <div class="navbar-right-desktop desktop font-400 primary-color">
-      <p (click)="redirect('/about')">About</p>
-      <p>Work</p>
-      <p>Contact</p>
+      <p *ngFor="let item of headerItems" (click)="redirect(item.url, item.fragment)">{{item.title}}</p>
     </div>
     <div class="navbar-right-mobile mobile pointer">
-      <img src="../../assets/menu.svg" alt="menu" *ngIf="!showMenu" (click)="showMenu = !showMenu"/>
-      <img src="../../assets/exit.svg" alt="menu" *ngIf="showMenu" (click)="showMenu = !showMenu"/>
+      <img src="../../assets/menu.svg" alt="menu" *ngIf="!showMenu" (click)="showMenu = !showMenu" />
+      <img src="../../assets/exit.svg" alt="menu" *ngIf="showMenu" (click)="showMenu = !showMenu" />
     </div>
   </div>
   <div class="header-mobile-content font-400 mobile primary-color" *ngIf="showMenu">
-      <div class="header-mobile-list" (click)="redirect('/about')">
-        <img src="../../assets/about.svg" alt="about"/>
-        <p>About</p>
-      </div>
-      <div class="header-mobile-list">        
-        <img src="../../assets/portfolio.svg" alt="portfolio"/>
-        <p>Work</p>
-      </div>
-      <div class="header-mobile-list">        
-        <img src="../../assets/contact.svg" alt="contact"/>
-        <p>Contact</p>
-      </div >
+    <div *ngFor="let item of headerItems" class="header-mobile-list" (click)="redirect(item.url, item.fragment)">
+      <img src="{{item.icon}}" alt="{{item.title}}" />
+      <p>{{item.title}}</p>
+    </div>
   </div>
 </div>
