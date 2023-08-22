@@ -9,7 +9,7 @@
 }
 
 .work-container {
-    height: 50vh;
+    height: 30vh;
     background-color: $secondaryColor;
     padding: 3% 5%;
 }
@@ -88,6 +88,10 @@ tr {
     
     .mobile {
         display: none;
+    }
+
+    .work-container {
+        height: 50vh;
     }
 
     .work-content {
