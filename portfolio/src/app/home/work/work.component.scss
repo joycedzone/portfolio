@@ -9,7 +9,7 @@
 }
 
 .work-container {
-    height: auto;
+    height: 50vh;
     background-color: $secondaryColor;
     padding: 3% 5%;
 }
@@ -75,6 +75,10 @@ table {
 
 tr {
     vertical-align: text-top;
+}
+
+.active {
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 992px) {

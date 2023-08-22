@@ -51,6 +51,15 @@ export class WorkComponent {
     this.responsibility = selected.responsibility;
     this.url = selected.url;
     this.showOptions = false;
+
+    const elements = document.getElementsByClassName('dropdown-item')
+    for (var i = 0; i < elements.length; i++) {
+      if (elements[i].id != selected.title) {
+        document.getElementById(elements[i].id)?.classList.remove('active')
+      } else {
+        document.getElementById(elements[i].id)?.classList.add('active')
+      }
+    }
   }
 
 }

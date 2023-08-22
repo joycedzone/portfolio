@@ -4,7 +4,7 @@
     </div>
     <div class="work-content font-300 body-text">
         <div class="work-content-title desktop">
-            <p *ngFor="let item of projects" class="dropdown-item" (click)="selectProject(item)">
+            <p *ngFor="let item of projects" class="dropdown-item" (click)="selectProject(item)" id="{{item.title}}">
                 {{ item.title }}
             </p>
         </div>

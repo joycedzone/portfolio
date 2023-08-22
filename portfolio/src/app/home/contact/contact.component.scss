@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 .contact-container {
-    height: auto;
+    height: 50vh;
     padding: 3% 5%;
 }
 
@@ -12,4 +12,9 @@
 
 .contact-socials {
     padding-bottom: 3%;
+
+    a:hover {
+        font-weight: bold;
+    }
 }
+
